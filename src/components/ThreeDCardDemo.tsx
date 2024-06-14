@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
+import Image from "next/image" 
 
 interface myProps {
   source: string,
@@ -26,12 +27,12 @@ export function ThreeDCardDemo({ source, title, description }: myProps) {
           {description}
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-          <img
+          <Image
             src={source}
             height="1000"
             width="1000"
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt="thumbnail"
+            alt="thumbnail" 
           />
         </CardItem>
         <div className="flex justify-center items-center mt-20">
