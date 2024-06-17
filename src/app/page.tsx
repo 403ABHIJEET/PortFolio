@@ -58,8 +58,8 @@ export default function Home() {
         <a href="https://drive.google.com/file/d/10BputS-uL_t8AzTkrHwVkl0SA3FfZtio/view" target="_blank">
           <ShimmerButton>Download CV</ShimmerButton>
         </a>
-        <div className="hidden md:block lg:block">
-          Abhijeet Kumar
+        <div className="hidden lg:block">
+          Copyright &copy; 2024 ABHIJEET KUMAR
         </div>
         <div>
           <DockDemo />
