@@ -8,21 +8,19 @@ import { SparklesPreview } from "@/components/SparklesPreview";
 import Skills from "@/components/skill/Skill";
 import { DockDemo } from "@/components/DockDemo";
 import ShimmerButton from "@/components/magicui/shimmer-button";
-import ShinyButton from "@/components/magicui/shiny-button";
-import Link from "next/link";
 
 export default function Home() {
   const words = ["Frontend-Developer", "Backend-Developer", "MERN-Stack-Developer", "Competitive-Coder"];
   const projects = [
     {
       id: 1,
-      source: "https://wallpapercave.com/wp/wp11230267.jpg",
+      source: "",
       title: "Myster Message",
       description: "Mystery message is a web app for unknown messaging",
     },
     {
       id: 2,
-      source: "https://images.businessnewsdaily.com/app/uploads/2022/04/04073619/how-ecommerce-works.png",
+      source: "",
       title: "E-Commerce Site",
       description: "It is an e-commerce website for salling and buying",
     },
