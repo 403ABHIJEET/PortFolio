@@ -27,9 +27,9 @@ export default function Home() {
   ]
   return (
     <div className="m-0">
-      <div className="flex justify-evenly">
-        <div className="flex items-center justify-center text-6xl flex-col my-96">
-          <h1 className="font-black"><span className="text-purple-700">ABHIJEET</span> KUMAR</h1>
+      <div className="flex flex-col lg:flex-row justify-evenly">
+        <div className="flex items-center justify-center text-2xl md:text-6xl lg:text-6xl flex-col my-96">
+          <h1 className="font-black text-4xl md:text-6xl"><span className="text-purple-700">ABHIJEET</span> KUMAR</h1>
           <div className="flex items-center justify-center flex-row pt-12">
             <div className="text-slate-50 font-black">
               <FlipWords words={words} />
@@ -37,18 +37,18 @@ export default function Home() {
             <BackgroundBeams />
           </div>
         </div>
-        <div className="">
+        <div className="flex justify-center">
           <IconCloudDemo />
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="hidden lg:flex justify-center p-20 pr-24">
         <Skills />
       </div>
       <div className="pt-40">
         <h1 className="text-center font-bold text-6xl">
           Projects
         </h1>
-        <div className="flex justify-evenly bg-transparent">
+        <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center bg-transparent p-4 md:p-0 lg:p-0">
           {
             projects.map((item, idx) => (
               <ThreeDCardDemo key={item.id} source={item.source} title={item.title} description={item.description} />
@@ -56,11 +56,11 @@ export default function Home() {
           }
         </div>
       </div>
-      <footer className="flex justify-evenly items-center bg-gray-800 h-16">
+      <footer className="flex flex-col md:flex-row lg:flex-row justify-evenly items-center bg-gray-800 h-40 md:h-auto lg:h-auto">
         <a href="https://drive.google.com/file/d/10BputS-uL_t8AzTkrHwVkl0SA3FfZtio/view" target="_blank">
           <ShimmerButton>Download CV</ShimmerButton>
         </a>
-        <div>
+        <div className="hidden md:block lg:block">
           Abhijeet Kumar
         </div>
         <div>
