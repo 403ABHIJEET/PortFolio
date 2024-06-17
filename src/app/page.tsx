@@ -28,14 +28,12 @@ export default function Home() {
   return (
     <div className="m-0">
       <div className="flex flex-col lg:flex-row justify-evenly">
-        <div className="flex items-center justify-center text-2xl md:text-6xl lg:text-6xl flex-col my-96">
+        <div className="flex items-center justify-center text-2xl md:text-5xl lg:text-6xl flex-col my-40 md:my-96 lg:my-96">
           <h1 className="font-black text-4xl md:text-6xl"><span className="text-purple-700">ABHIJEET</span> KUMAR</h1>
-          <div className="flex items-center justify-center flex-row pt-12">
-            <div className="text-slate-50 font-black">
-              <FlipWords words={words} />
-            </div>
-            <BackgroundBeams />
+          <div className="flex items-center justify-center my-12 text-slate-50 font-black flex-row">
+            <FlipWords words={words} />
           </div>
+          <BackgroundBeams />
         </div>
         <div className="flex justify-center">
           <IconCloudDemo />
