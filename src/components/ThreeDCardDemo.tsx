@@ -6,10 +6,11 @@ import Image from "next/image"
 interface myProps {
   source: string,
   title: string,
-  description: string
+  description: string,
+  link: string
 }
 
-export function ThreeDCardDemo({ source, title, description }: myProps) {
+export function ThreeDCardDemo({ source, title, description, link }: myProps) {
   return (
     <CardContainer className="inter-var border-solid border-2 border-white rounded-lg">
       <CardBody className="bg-black relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
@@ -41,7 +42,7 @@ export function ThreeDCardDemo({ source, title, description }: myProps) {
             as="button"
             className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold border hover:border-none hover:bg-white hover:text-black"
           >
-            Visit Now
+            <a href={link} target="_blank" >Visit Now</a>
           </CardItem>
         </div>
       </CardBody>

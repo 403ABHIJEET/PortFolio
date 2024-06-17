@@ -14,15 +14,17 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      source: "https://mystery-messages-jet.vercel.app/",
+      source: "",
       title: "Myster Message",
       description: "Mystery message is a web app for unknown messaging",
+      link: "https://mystery-messages-jet.vercel.app/"
     },
     {
       id: 2,
       source: "",
       title: "E-Commerce Site",
       description: "It is an e-commerce website for salling and buying",
+      link: ""
     },
   ]
   return (
@@ -49,7 +51,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center bg-transparent p-4 md:p-0 lg:p-0">
           {
             projects.map((item, idx) => (
-              <ThreeDCardDemo key={item.id} source={item.source} title={item.title} description={item.description} />
+              <ThreeDCardDemo key={item.id} source={item.source} title={item.title} description={item.description} link={item.link} />
             ))
           }
         </div>
