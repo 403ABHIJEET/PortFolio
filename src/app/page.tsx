@@ -4,7 +4,6 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 import { FlipWords } from "@/components/ui/flip-words";
 import { ThreeDCardDemo } from "@/components/ThreeDCardDemo"
 import { IconCloudDemo } from "@/components/IconCloudDemo";
-import { SparklesPreview } from "@/components/SparklesPreview";
 import Skills from "@/components/skill/Skill";
 import { DockDemo } from "@/components/DockDemo";
 import ShimmerButton from "@/components/magicui/shimmer-button";
@@ -14,14 +13,14 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      source: "",
+      source: "/project/mystery-message.png",
       title: "Myster Message",
       description: "Mystery message is a web app for unknown messaging",
       link: "https://mystery-messages-jet.vercel.app/"
     },
     {
       id: 2,
-      source: "",
+      source: "/project/e-commerce.png",
       title: "E-Commerce Site",
       description: "It is an e-commerce website for salling and buying",
       link: ""
