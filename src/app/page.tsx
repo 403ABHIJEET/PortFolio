@@ -21,7 +21,7 @@ export default function Home() {
       source: "/project/e-commerce.png",
       title: "E-Commerce Site",
       description: "It is an e-commerce website for salling and buying required things",
-      link: ""
+      link: "#"
     },
     {
       source: "/project/portfolio.png",
