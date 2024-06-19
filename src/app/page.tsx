@@ -12,19 +12,23 @@ export default function Home() {
   const words = ["Frontend-Developer", "Backend-Developer", "MERN-Stack-Developer", "Competitive-Coder"];
   const projects = [
     {
-      id: 1,
       source: "/project/mystery-message.png",
       title: "Myster Message",
-      description: "Mystery message is a web app for unknown messaging",
+      description: "Mystery message is a web app for unknown messaging and recieving",
       link: "https://mystery-messages-jet.vercel.app/"
     },
     {
-      id: 2,
       source: "/project/e-commerce.png",
       title: "E-Commerce Site",
-      description: "It is an e-commerce website for salling and buying",
+      description: "It is an e-commerce website for salling and buying required things",
       link: ""
     },
+    {
+      source: "/project/portfolio.png",
+      title: "Portfolio",
+      description: "Personal portfolio where i have described about my skills and projects",
+      link: "https://port-folio-xi-seven.vercel.app/"
+    }
   ]
   return (
     <div className="m-0">
@@ -50,7 +54,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center bg-transparent p-4 md:p-0 lg:p-0">
           {
             projects.map((item, idx) => (
-              <ThreeDCardDemo key={item.id} source={item.source} title={item.title} description={item.description} link={item.link} />
+              <ThreeDCardDemo key={idx} source={item.source} title={item.title} description={item.description} link={item.link} />
             ))
           }
         </div>
