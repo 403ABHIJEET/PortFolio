@@ -23,12 +23,6 @@ export default function Home() {
       description: "It is an e-commerce website for salling and buying required things",
       link: "#"
     },
-    {
-      source: "/project/portfolio.png",
-      title: "Portfolio",
-      description: "Personal portfolio where i have described about my skills and projects",
-      link: "https://port-folio-xi-seven.vercel.app/"
-    }
   ]
   return (
     <div className="m-0">
