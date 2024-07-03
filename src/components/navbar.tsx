@@ -11,12 +11,12 @@ export function FloatingNavDemo() {
     },
     {
       name: "Projects",
-      link: "/about",
+      link: "/project",
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "About",
-      link: "/contact",
+      link: "/about",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),

@@ -4,8 +4,12 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils/cn";
 import axios from 'axios'
+import { useToast } from "@/components/ui/use-toast";
 
 export default function SignupFormDemo() {
+
+    const { toast } = useToast()
+
     const [formValues, setFormValues] = useState({
         name: '',
         email: '',
@@ -26,14 +30,21 @@ export default function SignupFormDemo() {
             const result = await axios.post(`/api/send-email`, {
                 name: formValues.name, email: formValues.email, message: formValues.message
             })
+            toast({
+                title: "Email sent successfuly"
+            })
             console.log("Email sent successfuly")
         } catch (error) {
+            toast({
+                title: "Failed to sent email",
+                variant: "destructive"
+            })
             console.log("Failed to send email", error)
         }
     };
 
     return (
-        <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-black m-44 border-2 border-white-1/2">
+        <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-black m-36 border-2 border-white-1/2">
             <h2 className="font-bold text-xl text-white text-center">
                 Contact With Us Via Email
             </h2>
