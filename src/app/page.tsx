@@ -40,10 +40,10 @@ export default function Home() {
           <IconCloudDemo />
         </div>
       </div>
-      <div className="hidden lg:flex justify-center p-20 pr-24">
+      <div className="hidden lg:flex justify-center px-20 pr-24">
         <Skills />
       </div>
-      <div className="pt-40">
+      <div className="pt-20">
         <h1 className="text-center font-bold text-6xl">
           Projects
         </h1>
