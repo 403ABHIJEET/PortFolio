@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React from "react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { FlipWords } from "@/components/ui/flip-words";
