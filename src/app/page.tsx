@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </div>
       <footer className="flex flex-col md:flex-row lg:flex-row justify-evenly items-center bg-gray-800 h-40 md:h-auto lg:h-auto">
-        <a href="https://drive.google.com/file/d/10BputS-uL_t8AzTkrHwVkl0SA3FfZtio/view?usp=sharing" target="_blank">
+        <a href="https://drive.google.com/file/d/1Lf38CGLqDMcT8Cc_0GgMZXoi1xm02Wyu/view?usp=sharing" target="_blank">
           <ShimmerButton>Download CV</ShimmerButton>
         </a>
         <div className="hidden lg:block">
