@@ -19,11 +19,11 @@ export default function Home() {
       source: "https://github.com/403ABHIJEET/mystery-messages"
     },
     {
-      png: "/project/e-commerce.png",
-      title: "E-Commerce Site",
-      description: "It is an e-commerce website for salling and buying required things",
-      view: "#",
-      source: "#"
+      png: "/project/full.png",
+      title: "StableMax",
+      description: "It is a free AI image generation app",
+      view: "https://stable-max.vercel.app/",
+      source: "https://github.com/403ABHIJEET/StableMax"
     },
   ]
   return (
