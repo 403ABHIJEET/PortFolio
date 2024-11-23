@@ -4,7 +4,7 @@ import "./globals.css";
 import React from "react";
 import { FloatingNavDemo } from "@/components/navbar";
 import { Toaster } from "@/components/ui/toaster";
-
+import Provider from "./provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <FloatingNavDemo />
-        {children}
-        <Toaster />
+        <Provider>
+          <FloatingNavDemo />
+          {children}
+          <Toaster />
+        </Provider>
       </body>
     </html>
   );

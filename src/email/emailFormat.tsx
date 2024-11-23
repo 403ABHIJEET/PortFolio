@@ -9,9 +9,9 @@ interface props {
 export default function EmailFormat({ name, email, message }: props) {
   return (
     <div>
-        <h1>{name}</h1>
+        <h1>Name: {name}</h1>
         <h2>Email: {email}</h2>
-        <br />
+        <h2>Message:</h2>
         <p>{message}</p>
     </div>
   )
