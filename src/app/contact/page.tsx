@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/alertbox"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 export default function SignupFormDemo() {
-    const {data: session, status} = useSession()
+    const {data: session } = useSession()
 
     const [senderEmail, setSenderEmail] = useState('')
 
